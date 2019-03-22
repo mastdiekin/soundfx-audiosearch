@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sound FX Search</title>
+	<link rel="stylesheet" href="./style.min.css">
+	<link rel="stylesheet" href="./libs.min.css">
+</head>
+<body>
+	<!-- begin wrapper -->
+	<div class="wrapper">
+		<!-- begin margin bottom -->
+		<div class="margin bottom">
+			<div class="search__form">
+				<form name="searchForm" id="searchForm">
+					<div class="search__block">
+						<input name="searchInput" required autofocus type="text" id="search__input">
+						<button required id="searchSubmit" type="submit"></button>
+						<button id="search__reset" class="search__reset hidden"></button>
+						<div class="clearfix"></div>
+					</div>
+					<select id="searchSelect"></select>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+			<div style="font-size: smaller;">
+				<a target="_blank" href="https://github.com/mastdiekin/audiosearch" class="git">
+					<span id="version__text"></span> <span id="version"></span>
+				</a>
+				<a href="options.html" target="_blank" class="option__link">
+					<i class="fa fa-cog" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<!-- end margin bottom -->
+	</div>
+	<!-- end wrapper -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/settings.js"></script>
+	<script src="./js/inputsearch.js"></script>
+	<script src="./js/locale.js"></script>
+</body>
+</html>

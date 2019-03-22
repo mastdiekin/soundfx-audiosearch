@@ -1,0 +1,44 @@
+$output-bourbon-deprecation-warnings: false
+@import bourbon
+@import src/_fonts
+@import src/_func
+@import src/_base
+@import src/_vars
+
+.wrapper
+	&.manual
+		color: $b
+		font-size: 17px
+		line-height: 36px
+		a
+			border-bottom: 1px dashed $main
+			&:hover
+				border-bottom: 0
+		img
+			max-width: 100%
+			margin: 70px 0 15px
+			display: block
+		ol
+			li
+				margin-bottom: 50px
+				padding: 10px
+				&:last-of-type
+					margin-bottom: 0
+		.logo
+			.t
+				bottom: 2px
+			img
+				margin: 0
+		#yandextranslatorapi
+			text-align: center
+			line-height: 40px
+			margin-bottom: 50px
+			color: $main
+
+.manual__img
+	border-bottom: 0 !important
+	display: block
+	box-shadow: none
+	transition: all $t linear
+	&:hover
+		box-shadow: 0px 0px 124px -25px rgba($main, .75)

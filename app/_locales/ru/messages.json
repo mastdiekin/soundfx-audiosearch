@@ -1,0 +1,58 @@
+{
+	"version": {
+		"message": "Версия",
+		"description": ""
+	},
+	"search_input": {
+		"message": "Собака, выстрел и т.п.",
+		"description": ""
+	},
+	"translator_text": {
+		"message": "Использовать переводчик для поиска",
+		"description": ""
+	},
+	"header_title": {
+		"message": "Настройки расширения",
+		"description": ""
+	},
+	"yandex_key_input": {
+		"message": "Yandex.Переводчик API ключ",
+		"description": ""
+	},
+	"status_saved": {
+		"message": "Сохранено!",
+		"description": ""
+	},
+	"error": {
+		"message": "Ошибка",
+		"description": ""
+	},
+	"error_message": {
+		"message": "Проверьте правильность введенного ключа",
+		"description": ""
+	},
+	"error_messagez": {
+		"message": "в настройках",
+		"description": ""
+	},
+	"enter": {
+		"message": "Введите",
+		"description": ""
+	},
+	"enter_message": {
+		"message": "Yandex.Translator API ключ",
+		"description": ""
+	},
+	"save_button": {
+		"message": "Сохранить",
+		"description": ""
+	},
+	"reset_button": {
+		"message": "Очистить",
+		"description": ""
+	},
+	"manual": {
+		"message": "Инструкция по регистрации",
+		"description": "Ссылка на мануал, готова только русская версия"
+	}
+}

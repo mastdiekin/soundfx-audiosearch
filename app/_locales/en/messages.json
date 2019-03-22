@@ -1,0 +1,54 @@
+{
+	"version": {
+		"message": "Version",
+		"description": ""
+	},
+	"search_input": {
+		"message": "Dog, shots...etc",
+		"description": ""
+	},
+	"translator_text": {
+		"message": "Use translator for search",
+		"description": ""
+	},
+	"header_title": {
+		"message": "Extension settings",
+		"description": ""
+	},
+	"yandex_key_input": {
+		"message": "Yandex translator API key",
+		"description": ""
+	},
+	"status_saved": {
+		"message": "Saved!",
+		"description": ""
+	},
+	"error": {
+		"message": "Error",
+		"description": ""
+	},
+	"error_message": {
+		"message": "Your key is invalid.",
+		"description": ""
+	},
+	"error_messagez": {
+		"message": "Check in settings",
+		"description": ""
+	},
+	"enter": {
+		"message": "Enter",
+		"description": ""
+	},
+	"enter_message": {
+		"message": "Yandex.Translator API key",
+		"description": ""
+	},
+	"save_button": {
+		"message": "Save",
+		"description": ""
+	},
+	"reset_button": {
+		"message": "Reset",
+		"description": ""
+	}
+}

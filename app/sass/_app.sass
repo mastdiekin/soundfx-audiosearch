@@ -1,0 +1,96 @@
+@import '_extends.sass'
+
+.git
+	+pa
+	left: 5px
+	bottom: 5px
+
+.option__link
+	font-size: 25px
+	color: $b
+	+pa
+	bottom: 5px
+	right: 9px
+	&:hover
+		i
+			animation: rotator 2s linear infinite
+	i
+		transition: all .5s linear
+
+@keyframes rotator
+	from
+		transform: rotate(0deg)
+
+	to
+		transform: rotate(-360deg)
+.rotator
+	animation-name: rotator
+
+.big__text
+	font-size: 18px
+	font-weight: bold
+	margin: 10px 0
+	display: block
+
+.wrapper
+	min-width: 340px
+	min-height: 200px
+	+df
+	+cc
+	p
+		margin-bottom: 15px
+
+.favs
+	margin-top: 5px
+	margin-right: 10px
+
+.search__form
+	+df
+	input, button#searchSubmit
+		height: 30px
+		line-height: 30px
+		border: 0
+		transition: all $t linear
+	input
+		width: $input-width
+		float: left
+		border-radius: $input-bdrs
+		padding: 0 #{$search-reset-length + 10px} 0 10px
+		background: darken($w, 5%)
+		border: 1px solid $inputs
+		border-bottom: 0 !important
+		border-right: 0 !important
+		transition: all $t linear
+		color: darken(#ccc, 20%)
+		+placeholder
+			color: $inputs
+		&:focus
+			background: darken($w, 1%)
+			box-shadow: inset 1px 1px 1px 0px rgba($b, .1)
+			+placeholder
+				color: darken(#ccc, 5%)
+	button#searchSubmit
+		width: $search-button
+		float: right
+		cursor: pointer
+		background-color: $main
+		background-image: url('/img/icon-search.png')
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: $button-bdrs
+		&:hover
+			background-color: $main-l2
+	select
+		cursor: pointer
+		margin: 0 0 7px
+		width: $select-width
+		height: 30px
+		border: 0
+		border-radius: 0 0 3px 3px
+		float: right
+		z-index: 1
+		background: $inputs
+		color: $w
+
+.search__block
+	+pr

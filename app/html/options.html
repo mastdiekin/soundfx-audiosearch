@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sound FX Search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="options.min.css">
+  <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+  <!-- begin wrapper -->
+  <div class="wrapper">
+    <!-- begin header -->
+    <header class="header">
+      <div class="logo">
+        <img src="./img/logo.png" alt="">
+        <span class="t">Sound FX Search</span>
+      </div>
+      <h1 id="headerTitle"></h1>
+    </header>
+    <!-- end header -->
+
+    <!-- begin options -->
+    <div class="options">
+      <div class="option">
+        <label>
+          <input type="checkbox" id="b_translator" />
+          <!--           <div class="option__bg"></div> -->
+          <strong id="translatorText"></strong>
+        </label>
+      </div>
+    </div>
+    <!-- end options -->
+    <form name="settingsForm" id="settingsForm">
+      <!-- begin inputs -->
+      <div class="inputs">
+
+        <div class="input">
+          <h2 class="titles" id="yandexEnter"></h2><a href="https://translate.yandex.ru/developers/keys" id="yandexEnterText" target="_blank"></a>
+          <div class="input__wrap">
+            <input type="text" id="customapikey">
+            <button id="yat__reset" class="yat__reset hidden" type="button"></button>
+          </div>
+        </div>
+        <a href="manual.html" target="_blank" id="manual"></a>
+
+      </div>
+      <!-- end inputs -->
+      <!-- begin save -->
+      <div class="save__wrapper" id="saveTable">
+        <div class="save">
+          <button id="save" type="submit"></button>
+          <button id="reset" type="button"></button>
+          <div id="statusSaved" style="visibility: hidden;"></div>
+        </div>
+      </div>
+      <!-- end save -->
+    </form>
+  </div>
+  <!-- end wrapper -->
+  <!-- begin footer -->
+  <footer class="footer">
+    <span id="changeSavedAutomatically"></span>
+    <a target="_blank" href="https://github.com/mastdiekin/audiosearch">
+      <span id="version__text"></span> <span id="version"></span>
+    </a>
+  </footer>
+  <!-- end footer -->
+  <script src="./js/settings.js"></script>
+  <script src="./js/options.js"></script>
+  <script src="./js/locale.js"></script>
+</body>
+</html>

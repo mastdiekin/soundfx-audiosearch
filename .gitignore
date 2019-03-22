@@ -1,0 +1,11 @@
+/node_modules/
+/app/libs/
+/dist/
+desktop.ini
+*.sublime-workspace
+*.sublime-project
+/app/psd/
+sftp-config.json
+*.zip
+aczcx.js
+ssssssssss.js

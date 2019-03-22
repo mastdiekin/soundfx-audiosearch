@@ -1,0 +1,135 @@
+hr
+	border: 0
+	height: 0
+	border-top: 1px solid rgba($b, 0.1)
+	border-bottom: 1px solid rgba($w, 0.3)
+
+input[type="checkbox"]
+	margin-right: 0.5em
+	-webkit-appearance: none
+	height: 20px
+	width: 20px
+	cursor: pointer
+	+pr
+	border-radius: 50%
+	background-color: $w
+	transition: all $t linear
+	outline: none !important
+	box-shadow: none !important
+	border: 0 !important
+	&:checked
+		background-color: $main
+		background-image: none !important
+		~ .option__bg
+			// background: $main
+			background: lighten($b, 10%)
+			// border-top: 1px solid lighten($b, 20%)
+			// box-shadow: 0px 1px 0px 0px lighten($b, 20%)
+			opacity: 1
+	&:before
+		+pa
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		color: #fff
+		transition: all $t linear
+	&:checked:before
+		+pa
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		line-height: 20px
+		text-align: center
+		color: #fff
+		content: '✔'
+		background-image: none
+		text-shadow: none !important
+
+select,
+input,
+button
+	outline: none
+
+.debug
+	font-size: 15px
+	padding: 10px
+	color: $b
+
+.options
+	+clr
+
+.option
+	// margin-bottom: .6em
+	+pr
+	label *
+		vertical-align: middle
+	label
+		cursor: pointer
+		width: 100%
+		display: block
+		transition: all $t linear
+		padding: 8px 10px
+		background: $inputs
+		&:hover
+			background: lighten($inputs, 10%)
+	&.with--padding
+		label
+			// padding-left: 25px
+			padding-left: 40px
+		input[type="checkbox"]
+			margin-left: .5em
+
+.clearfix:after
+	content: " "
+	display: table
+	clear: both
+
+
+.option__bg
+	+pa
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: -1
+
+.error
+	margin-top: 20px
+	background: lighten(red, 20%)
+	padding: 15px
+	color: $w
+	text-align: center
+	font-size: 16px
+	&.before
+		margin-top: 0
+		padding: 10px 15px
+
+.search__reset
+	+df
+	+cc
+	+pa
+	width: $search-reset-length
+	height: $search-reset-length
+	top: 5px
+	right: $search-button + 5px
+	border: 0
+	cursor: pointer
+	color: $w
+	border-radius: 50%
+	background: $inputs
+	transition: all $t linear
+	line-height: 0
+	&:hover
+		background: transparent
+		&:before
+			color: darken(#ccc, 5%)
+	&:before
+		content: 'х'
+		font-size: 12px
+		line-height: 0
+	&.hidden
+		display: none
+		opacity: 0
+		visibility: hidden
