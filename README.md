@@ -1,3 +1,7 @@
+![](https://github.com/mastdiekin/audiosearch/blob/master/app/gh/screen.png)
+
+Download: [1.0.0](https://chrome.google.com/webstore/detail/sound-fx-search/jmpgkfbnfeidlekpnofcobjdahinpkad)
+
 # How to use
 
 Required [Node.js](https://nodejs.org/en/)
