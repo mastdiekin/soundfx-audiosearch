@@ -110,28 +110,44 @@ function init() {
 
     }
 
-
-    //Както автоматизировать можно?
     function createSearch() {
       x = x.toLowerCase();
+      var u = '';
       switch(xKey) {
         case site_settings.freesound.value:
-          return createSearchFreesound(x);
+        u = site_settings.freesound.url + encodeURIComponent(x);
+        break;
+
         case site_settings.findsounds.value:
-          return createSearchFindsounds(x);
+        u = site_settings.findsounds.url + encodeURIComponent(x);
+        break;
+
         case site_settings.audiojungle.value:
-          return createSearchAudiojungle(x);
+        u = site_settings.audiojungle.url + encodeURIComponent(x);
+        break;
+
         case site_settings.pond5.value:
-          return createSearchPond5(x);
+        u = site_settings.pond5.url + encodeURIComponent(x) + site_settings.pond5.queryParams;
+        break;
+
         case site_settings.audioblocks.value:
-          return createSearchAudioblocks(x);
+        u = site_settings.audioblocks.url + encodeURIComponent(x) + site_settings.audioblocks.queryParams;
+        break;
+
         case site_settings.productioncrate.value:
-          return createSearchProductioncrate(x);
+        u = site_settings.productioncrate.url + encodeURIComponent(x);
+        break;
+
         case site_settings.videvo.value:
-          return createSearchVidevo(x);
+        u = site_settings.videvo.url + encodeURIComponent(x) + site_settings.videvo.queryParams;
+        break;
+
         case site_settings.freesfx.value:
-          return createSearchFreesfx(x);
+        u = site_settings.freesfx.url + encodeURIComponent(x);
+        break;
+
       }
+      return createSearchZ(x, u);
     }
 
   }
@@ -177,38 +193,8 @@ function init() {
 
 
 
-  function createSearchFreesound(x) {
-    chrome.tabs.create({url: site_settings.freesound.url + encodeURIComponent(x)});
-    window.close();
-  }
-
-  function createSearchFindsounds(x) {
-    chrome.tabs.create({url: site_settings.findsounds.url + encodeURIComponent(x)});
-    window.close();
-  }
-
-  function createSearchAudiojungle(x) {
-    chrome.tabs.create({url: site_settings.audiojungle.url + encodeURIComponent(x)});
-    window.close();
-  }
-  function createSearchPond5(x) {
-    chrome.tabs.create({url: site_settings.pond5.url + encodeURIComponent(x) + site_settings.pond5.queryParams});
-    window.close();
-  }
-  function createSearchAudioblocks(x) {
-    chrome.tabs.create({url: site_settings.audioblocks.url + encodeURIComponent(x) + site_settings.audioblocks.queryParams});
-    window.close();
-  }
-  function createSearchProductioncrate(x) {
-    chrome.tabs.create({url: site_settings.productioncrate.url + encodeURIComponent(x)});
-    window.close();
-  }
-  function createSearchVidevo(x) {
-    chrome.tabs.create({url: site_settings.videvo.url + encodeURIComponent(x) + site_settings.videvo.queryParams});
-    window.close();
-  }
-  function createSearchFreesfx(x) {
-    chrome.tabs.create({url: site_settings.freesfx.url + encodeURIComponent(x)});
+  function createSearchZ(x, u) {
+    chrome.tabs.create({url: u});
     window.close();
   }
   
